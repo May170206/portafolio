@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f4f8; 
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .profile-container, .main-container {
+            margin-bottom: 30px;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-container img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-container .section {
+            flex: 1;
+        }
+        .profile-container .section p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Currículum Vitae</h1>
+
+        <!-- Contenedor de foto e información personal alineado a la izquierda -->
+        <div class="profile-container">
+            <img src="{{ url_for('static', filename='m.png') }}" alt="imagen" class="profile-img">
+            <div class="section">
+                <h2>Información Personal</h2>
+                <p><strong>Nombre:</strong> Mayra Guadalupe</p>
+                <p><strong>Apellidos:</strong> Ramírez Segundo</p>
+                <p><strong>Fecha de nacimiento:</strong> 17/06/2002</p>
+                <p><strong>Dirección:</strong> San Francisco Solo, San José del Rincón</p>
+                <p><strong>Teléfono:</strong> 1234567890</p>
+                <p><strong>Email:</strong> mayra@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Contenedor del resto de la información -->
+        <div class="main-container">
+            <!-- Objetivo profesional -->
+            <div class="section">
+                <h2>Objetivo Profesional</h2>
+                <p>Mi objetivo profesional es trabajar en una empresa, adquirir conocimientos y en un futuro poder emprender mi propia empresa.</p>
+            </div>
+
+            <!-- Experiencia Laboral -->
+            <div class="section">
+                <h2>Experiencia Laboral</h2>
+                <p><strong>Puesto:</strong> Secretaria</p>
+                <p><strong>Empresa:</strong> WiCo</p>
+                <p><strong>Duración:</strong> Enero/2020- Junio/2022</p>
+                <p><strong>Descripción:</strong> Atención a clientes, realizar inventario, generar reportes de problemáticas presentadas por los usuarios.</p>
+                <hr>
+            </div>
+
+            <!-- Educación -->
+            <div class="section">
+                <h2>Último grado de educación</h2>
+                <p><strong>Grado académico:</strong> Preparatoria</p>
+                <p><strong>Institución:</strong> Preparatoria Oficial No.2</p>
+                <p><strong>Duración:</strong> Junio/2017 - Junio/2020</p>
+                
+                <h2>Grado cursado actualmente</h2>
+                <p><strong>Grado académico:</strong> Ingeniería en Sistemas Computacionales</p>
+                <p><strong>Institución:</strong> Universidad Mexiquense del Bicentenario</p>
+                <p><strong>Duración:</strong> Septiembre/2021 - Febrero/2026</p>
+            </div>
+
+            <!-- Habilidades -->
+            <div class="section">
+                <h2>Habilidades</h2>
+                <p><strong>Matemáticas:</strong> Ecuaciones, algoritmos, integrales, derivadas...</p>
+                <p><strong>Idiomas:</strong> Español (nativo), Inglés (básico)</p>
+            </div>
+
+            <!-- Referencias -->
+            <div class="section">
+                <h2>Referencias</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
