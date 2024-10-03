@@ -2,11 +2,11 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return 'Hola mundo'
+#@app.route('/')
+#def index():
+    #return 'Hola mundo'
 
-@app.get('/wola')
+@app.route('/')
 def html():
     return render_template('portafolio.html')
 
